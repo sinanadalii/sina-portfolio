@@ -25,7 +25,7 @@ export function Hero() {
         animate="visible"
         className="relative mx-auto grid w-full max-w-[1200px] items-center gap-14 lg:grid-cols-[minmax(0,1.02fr)_minmax(320px,0.98fr)] lg:gap-16"
       >
-        <div>
+        <div className="order-2 lg:order-1">
           <motion.div variants={fadeUp}>
             <GlowLine className="w-14" />
           </motion.div>
@@ -68,7 +68,7 @@ function HeroPortrait() {
   return (
     <motion.div
       variants={fadeUpBlur}
-      className="group relative mx-auto w-full max-w-[34rem] lg:mx-0 lg:justify-self-end"
+      className="group relative order-1 mx-auto w-full max-w-[34rem] lg:order-2 lg:mx-0 lg:justify-self-end"
     >
       <div
         aria-hidden
