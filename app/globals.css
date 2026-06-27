@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/*
+  Design tokens. In Tailwind v4 these @theme values are exposed both as CSS
+  custom properties and as utility classes (e.g. `bg-background`, `text-muted`,
+  `border-border`, `bg-glow-primary/10`, `rounded-card`).
+*/
+@theme {
+  --color-background: #050505;
+  --color-surface: #0f0f10;
+  --color-foreground: #ffffff;
+  --color-muted: #9ca3af;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-glow-primary: #6dff72;
+  --color-glow-secondary: #8b5cf6;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+
+  --radius-card: 16px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: rgba(109, 255, 114, 0.22);
+    color: #ffffff;
+  }
+
+  /* Visible, consistent focus state for keyboard users. */
+  :focus-visible {
+    outline: 2px solid var(--color-glow-primary);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}
+
+/*
+  Custom cursor support. The native cursor is only hidden after the cursor
+  component confirms (in JS) that this is a fine pointer + motion is allowed,
+  so the site never ends up cursor-less if JS fails or on touch devices.
+*/
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none;
+}
+.has-custom-cursor input,
+.has-custom-cursor textarea,
+.has-custom-cursor select,
+.has-custom-cursor [contenteditable="true"] {
+  cursor: auto;
+}
+
+/* Accessible "skip to content" link - off-screen until focused. */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  transform: translateY(-200%);
+  border: 1px solid var(--color-border);
+  border-radius: 0.6rem;
+  background-color: var(--color-surface);
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  transition: transform 0.2s ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
