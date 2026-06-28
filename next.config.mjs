@@ -11,6 +11,7 @@ const nextConfig = {
         output: "export",
         basePath: "/sina-portfolio",
         assetPrefix: "/sina-portfolio/",
+        trailingSlash: true,
         images: {
           unoptimized: true,
         },
