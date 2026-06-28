@@ -113,10 +113,10 @@ e.g. `components/sections/Projects.tsx`, `Services.tsx`, `About.tsx`, `Contact.t
 
 ## Content dashboard
 
-The site content lives in [`content/site.json`](content/site.json). The `/admin`
+The site content lives in [`content/site.json`](content/site.json). The `/content-studio-sina`
 page can edit that file through the GitHub Contents API and commit changes to
 `main`, which triggers the GitHub Pages workflow.
 
 Use a fine-grained GitHub token limited to this repository with **Contents:
-Read and write** permission. Paste it into `/admin`, load the latest content,
+Read and write** permission. Paste it into `/content-studio-sina`, load the latest content,
 edit, then save. The token is kept only in the browser tab.
