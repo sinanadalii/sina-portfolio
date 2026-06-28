@@ -1,0 +1,125 @@
+{
+  "site": {
+    "name": "Sina Nadali",
+    "role": "Digital Product Designer",
+    "email": "sinanadali1379@gmail.com",
+    "description": "Digital Product Designer focused on crafting intuitive, high-performing experiences for startups and ambitious brands."
+  },
+  "navItems": [
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Services", "href": "#services" },
+    { "label": "About", "href": "#about" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "headline": "Designing digital products that people love to use.",
+    "subtext": "Digital Product Designer focused on crafting intuitive, high-performing experiences for startups and ambitious brands.",
+    "primaryCta": { "label": "View Projects", "href": "#projects" },
+    "secondaryCta": { "label": "Contact Me", "href": "#contact" }
+  },
+  "profileLinks": {
+    "linkedin": "https://www.linkedin.com/in/sina-nadali-60b2b4204/",
+    "dribbble": "https://dribbble.com/sinanadalii"
+  },
+  "footer": {
+    "year": 2026
+  },
+  "projectsSection": {
+    "eyebrow": "Selected Work",
+    "heading": "Recent projects",
+    "intro": "A focused selection of product design explorations - full case studies are on the way."
+  },
+  "projects": [
+    {
+      "slug": "youtube-analytics-redesign",
+      "title": "YouTube Analytics Redesign",
+      "category": "Product Design / Dashboard",
+      "description": "A focused redesign exploration for improving creator analytics clarity, hierarchy, and decision-making.",
+      "tags": ["UX", "UI", "Dashboard", "Analytics"],
+      "accent": "primary",
+      "visual": "dashboard",
+      "comingSoon": true
+    },
+    {
+      "slug": "mobile-banking-experience",
+      "title": "Mobile Banking Experience",
+      "category": "Mobile App / UX Design",
+      "description": "A clean mobile banking concept focused on trust, speed, and everyday financial actions.",
+      "tags": ["UX", "UI", "Mobile", "Fintech"],
+      "accent": "secondary",
+      "visual": "mobile",
+      "comingSoon": true
+    }
+  ],
+  "servicesSection": {
+    "eyebrow": "Services",
+    "heading": "What I do",
+    "intro": "Design support across the full product lifecycle - from early structure to polished, shippable interfaces."
+  },
+  "services": [
+    {
+      "title": "Product Design",
+      "icon": "product",
+      "description": "End-to-end design from first concept to a considered, shippable product."
+    },
+    {
+      "title": "UX Design",
+      "icon": "ux",
+      "description": "Research-informed flows and structure that make complex tasks feel effortless."
+    },
+    {
+      "title": "UI Design",
+      "icon": "ui",
+      "description": "Precise, accessible interfaces with clear hierarchy and intentional detail."
+    },
+    {
+      "title": "Design Systems",
+      "icon": "systems",
+      "description": "Scalable component libraries and tokens that keep teams consistent and fast."
+    },
+    {
+      "title": "Web Design",
+      "icon": "web",
+      "description": "Responsive marketing and product sites built for clarity and performance."
+    },
+    {
+      "title": "Mobile Apps",
+      "icon": "mobile",
+      "description": "Native-feeling iOS and Android experiences designed for everyday use."
+    },
+    {
+      "title": "Prototyping",
+      "icon": "prototyping",
+      "description": "Interactive prototypes that test and validate ideas before engineering invests."
+    }
+  ],
+  "aboutSection": {
+    "eyebrow": "About",
+    "heading": "Designing with clarity, purpose, and precision.",
+    "intro": "I design digital products with a focus on clarity, usability, and polished execution. My work sits between product thinking, user experience, and visual craft - helping ideas become interfaces that feel simple, useful, and considered.",
+    "principles": [
+      {
+        "title": "Think in systems",
+        "description": "I create scalable structures, not isolated screens."
+      },
+      {
+        "title": "Design for decisions",
+        "description": "Every layout, flow, and interaction should help users move with confidence."
+      },
+      {
+        "title": "Polish with restraint",
+        "description": "Details should make the experience feel better, not louder."
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "Contact",
+    "heading": "Let's build something thoughtful.",
+    "intro": "Have a product idea, redesign, or digital experience in mind? I'm open to collaborations with startups, founders, and ambitious teams.",
+    "primaryCta": { "label": "Email Me", "href": "mailto:sinanadali1379@gmail.com" },
+    "secondaryLinks": [
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/sina-nadali-60b2b4204/" },
+      { "label": "Dribbble", "href": "https://dribbble.com/sinanadalii" }
+    ]
+  }
+}

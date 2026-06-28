@@ -110,3 +110,13 @@ scale using `clamp()` for the hero headline.
 
 Add sections to `app/page.tsx` using the `<Section>` primitive and the existing motion variants -
 e.g. `components/sections/Projects.tsx`, `Services.tsx`, `About.tsx`, `Contact.tsx`.
+
+## Content dashboard
+
+The site content lives in [`content/site.json`](content/site.json). The `/admin`
+page can edit that file through the GitHub Contents API and commit changes to
+`main`, which triggers the GitHub Pages workflow.
+
+Use a fine-grained GitHub token limited to this repository with **Contents:
+Read and write** permission. Paste it into `/admin`, load the latest content,
+edit, then save. The token is kept only in the browser tab.
